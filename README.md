@@ -1,4 +1,4 @@
-# MPhishing-Website-Detection-Google-Chrome-Extension-with-Machine-Learning-Model
+# Phishing-Website-Detection-Google-Chrome-Extension-with-Machine-Learning-Model
 
 ## Objective
 The objective is to develop a Google Chrome extension that utilizes HTML, CSS, JavaScript, and a trained machine learning model to detect malicious URLs. The extension will intercept URL loading in the web browser and perform a check using the trained model to determine if the URL is safe or unsafe. The extension will provide real-time feedback to the user by displaying pop-up messages. If the URL is deemed safe, the loading process will continue, and a pop-up message will confirm the safety. If the URL is considered unsafe, the loading process will be halted, and a pop-up message will inform the user about the potential danger. The extension will seek user permission to continue loading the unsafe URL or stop loading altogether. By achieving this objective, the Chrome extension will enhance user security by proactively identifying and notifying users about potentially malicious URLs.
@@ -20,7 +20,7 @@ The next step involved the extraction of features from the URLs dataset. These e
 2.	**Domain based Features**, and 
 3.	**HTML & Javascript based Features**.
 
-**1. Address Bar based Features**
+**1. Address Bar based Features**: 
 the following ones were specifically chosen:
 - Domain of URL: This feature captures the domain of the URL, providing insights into the website's origin.
 - IP Address in URL: This feature detects the presence of an IP address within the URL, which can be indicative of malicious activity.
@@ -33,7 +33,7 @@ the following ones were specifically chosen:
 - Prefix or Suffix "-" in Domain: This feature identifies the presence of a prefix or suffix "-" in the domain name, as it can be indicative of suspicious activity or attempts to mimic legitimate websites.
 By considering these specific address bar-based features, we aim to capture key characteristics that can aid in the identification and classification of phishing URLs.
 
-**2.	Domain based Features**
+**2.	Domain based Features**: 
 In addition to Address Bar based Features, another category of features extracted from the URLs dataset pertains to Domain based Features. Numerous features can be derived from this category, but for this project, the following features were specifically considered:
 - DNS Record: This feature provides information about the DNS (Domain Name System) record associated with the domain. It helps in analyzing the legitimacy of the domain and identifying any potential anomalies.
 - Website Traffic: This feature captures data related to the traffic received by the website. It offers insights into the popularity and reputation of the domain, allowing for the identification of suspicious or low-traffic domains.
@@ -42,7 +42,7 @@ In addition to Address Bar based Features, another category of features extracte
 
 By considering these domain-based features, we aim to incorporate additional characteristics that can contribute to the accurate classification of URLs as legitimate or phishing.
 
-**3.	HTML & Javascript based Features**
+**3.	HTML & Javascript based Features**: 
 The third category of features extracted from the URLs dataset pertains to HTML and JavaScript based Features. Within this category, several features can be derived, and for this project, the following features were specifically considered:
 - IFrame Redirection: This feature detects the presence of an IFrame tag in the webpage's HTML code, which can be used for malicious purposes such as redirecting the user to an unintended website or embedding malicious content.
 - Status Bar Customization: The customization of the browser's status bar is often employed by phishing websites to deceive users. This feature captures any attempts to modify the status bar, enabling the identification of potential phishing URLs.
